@@ -27,7 +27,7 @@ Created by Claude Opus 5.5, based on the lecture notes by Prof. Sang Hoon Lee.
 
 The page is a single self-contained `index.html` with no build step. Its header animates two Einstein solids, A with 40 oscillators and B with 60, sharing 100 energy quanta. Quanta hop at random so that every microstate is equally likely. Starting with all the energy in A, the system relaxes to the macrostate with the largest multiplicity *Ω*<sub>A</sub>*Ω*<sub>B</sub> and fluctuates around it, where the two solids have the same temperature. Plots show *q*<sub>A</sub> over time and a histogram of *q*<sub>A</sub> against *Ω*<sub>A</sub>*Ω*<sub>B</sub>. The run restarts every 75 seconds.
 
-The page supports light and dark mode and adapts to phone screens. For visitors who have reduced motion turned on, it shows a still frame instead of the animation.
+The page supports light and dark mode (a sun/moon button in the top-right corner switches by hand, and the choice is remembered across pages) and adapts to phone screens. For visitors who have reduced motion turned on, it shows a still frame instead of the animation.
 
 페이지는 빌드 과정 없이 `index.html` 파일 하나로 이루어져 있습니다. 상단에서는 진동자 40개인 아인슈타인 고체 A와 60개인 고체 B가 에너지 양자 100개를 나눠 갖는 모습을 보여줍니다. 처음에 에너지를 모두 A에 몰아 두어도, 계는 겹침수 *Ω*<sub>A</sub>*Ω*<sub>B</sub>가 가장 큰 거시 상태, 곧 두 고체의 온도가 같아지는 곳으로 옮겨 가 그 주위에서 요동합니다.
 

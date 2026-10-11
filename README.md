@@ -20,8 +20,12 @@ Created by Claude Opus 5.5, based on the lecture notes by Prof. Sang Hoon Lee.
 | 6 | What Temperature Really Is | 온도란 무엇인가 | [demo](https://lshlj82.github.io/interaction-and-temperature/) · [source](https://github.com/lshlj82/interaction-and-temperature) |
 | 7 | Pressure and Chemical Potential | 압력과 화학 퍼텐셜 | [demo](https://lshlj82.github.io/pressure-and-chemical-potential/) · [source](https://github.com/lshlj82/pressure-and-chemical-potential) |
 | 8 | Heat Engine | 열기관 | [demo](https://lshlj82.github.io/heat-engine/) · [source](https://github.com/lshlj82/heat-engine) |
+| 8+ | Beyond the Carnot Engine (supplement) | 카르노 엔진 너머 (보충 자료) | [demo](https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/) · [한국어](https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/ko.html) · [source](https://github.com/lshlj82/Chambadal-Novikov-Curzon-Ahlborn-engine) |
 | 9 | Thermodynamic Potentials | 열역학 퍼텐셜 | [demo](https://lshlj82.github.io/thermodynamic-potentials/) · [source](https://github.com/lshlj82/thermodynamic-potentials) |
 | 10 | Phase Transformation | 상변화 | [demo](https://lshlj82.github.io/phase-transformation/) · [source](https://github.com/lshlj82/phase-transformation) |
+
+Demo 8+ is a supplement to demo 8, not a separate lecture topic. It covers the Chambadal–Novikov–Curzon–Ahlborn engine, which delivers finite power, in English and Korean.
+데모 8+는 별도의 강의 주제가 아니라 데모 8의 보충 자료입니다. 유한한 일률을 내는 Chambadal–Novikov–Curzon–Ahlborn 엔진을 영어와 한국어로 다룹니다.
 
 ## About the page · 페이지 소개
 

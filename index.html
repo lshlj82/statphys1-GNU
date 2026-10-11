@@ -151,6 +151,9 @@
   .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; }
   .frac > span:first-child { border-bottom: 1px solid currentColor; padding: 0 0.2em; }
   .frac > span:last-child { padding: 0 0.2em; }
+  .sqrt { display: inline-flex; align-items: stretch; vertical-align: middle; }
+  .sqrt .rad { width: 0.55em; height: auto; flex: none; fill: none; stroke: currentColor; stroke-width: 1px; overflow: visible; }
+  .sqrt .radicand { border-top: 1px solid currentColor; padding: 0.12em 0.05em 0 0.05em; display: inline-flex; align-items: center; }
   .big { font-size: 1.3em; }
 
   .refs ul { margin: 0.5rem 0 1.5rem; padding-left: 1.2rem; max-width: 46rem; }
@@ -363,6 +366,22 @@ button.theme-btn svg{width:20px; height:20px; fill:none; stroke:currentColor; st
           </div>
           <div class="eq" aria-label="e is at most one minus T c over T h">
             <i>e</i> ≤ 1 − <span class="frac"><span><i>T</i><sub>c</sub></span><span><i>T</i><sub>h</sub></span></span>
+          </div>
+        </li>
+        <li class="demo supplement">
+          <span class="num">8+</span>
+          <div>
+            <h3><a href="https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/">Beyond the Carnot Engine</a><span class="ko" lang="ko">카르노 엔진 너머</span></h3>
+            <p>A supplement to the heat engine demo: the Chambadal–Novikov–Curzon–Ahlborn engine, which delivers finite power, its efficiency at maximum power, and the actual working cycle on a P–V diagram.</p>
+            <p class="ko" lang="ko">열기관 데모의 보충 자료: 유한한 일률을 내는 Chambadal–Novikov–Curzon–Ahlborn 엔진, 최대 일률에서의 효율, 그리고 P–V 도표로 본 실제 작동 순환.</p>
+            <div class="links">
+              <a class="primary" href="https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/">Open demo</a>
+              <a href="https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/ko.html" lang="ko">한국어</a>
+              <a href="https://github.com/lshlj82/Chambadal-Novikov-Curzon-Ahlborn-engine">Source on GitHub</a>
+            </div>
+          </div>
+          <div class="eq" aria-label="e equals one minus the square root of T c over T h">
+            <i>e</i> = 1 − <span class="sqrt"><svg class="rad" viewBox="0 0 10 30" preserveAspectRatio="none" aria-hidden="true"><path d="M0.5 17 L3 15.5 L6 29.3 L10 0.5" vector-effect="non-scaling-stroke"/></svg><span class="radicand"><span class="frac"><span><i>T</i><sub>c</sub></span><span><i>T</i><sub>h</sub></span></span></span></span>
           </div>
         </li>
         <li class="demo">

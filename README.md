@@ -45,7 +45,7 @@ Open `index.html` in any modern browser. Fonts load from Google Fonts when onlin
 
 1. Put `index.html` and this `README.md` at the root of the repository.
 2. In **Settings → Pages**, set the source to the `main` branch, root folder.
-3. The page will be served at `https://lshlj82.github.io/<repository-name>/`.
+3. The page will be served at `https://lshlj82.github.io/statphys1-GNU/`.
 
 ## References · 참고문헌
 

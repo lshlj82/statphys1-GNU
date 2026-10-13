@@ -91,6 +91,9 @@
   .hero-text p { margin: 0; max-width: 40rem; color: var(--muted); font-size: 1.2rem; }
   .hero-text .credit { margin-top: 1.25rem; font-family: var(--sans); font-size: 0.95rem; }
   .credit span { display: block; }
+  .hero-text .sequence { margin-top: 0.9rem; font-family: var(--sans); font-size: 0.95rem; color: var(--muted); max-width: 40rem; }
+  .sequence a { font-weight: 600; text-underline-offset: 3px; }
+  .sequence span { display: block; margin-top: 0.15rem; }
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     gap: 2rem;
@@ -218,6 +221,7 @@ button.theme-btn svg{width:20px; height:20px; fill:none; stroke:currentColor; st
       <p>Ten browser simulations that accompany the course, from temperature and energy to entropy, free energy and phase transformations. Open any demo to change the parameters and watch the physics respond.</p>
       <p class="ko" lang="ko" style="margin-top:0.6rem">온도와 에너지에서 엔트로피, 자유 에너지, 상변화까지, 강의와 함께 보는 열 가지 브라우저 시뮬레이션입니다. 데모를 열어 매개변수를 바꾸며 물리 현상이 어떻게 달라지는지 확인해 보세요.</p>
       <p class="credit">Created by Claude Opus 5.5, based on the lecture notes by Prof. Sang Hoon Lee.<span lang="ko">이상훈 교수의 강의 노트를 바탕으로 Claude Opus 5.5가 만들었습니다.</span></p>
+      <p class="sequence">Continued in <a href="https://lshlj82.github.io/statphys2-GNU/">Statistical Physics 2</a> (Schroeder, Chapters 6–8): Boltzmann and Gibbs statistics, quantum gases, and the Ising model.<span lang="ko">이어지는 과목 <a href="https://lshlj82.github.io/statphys2-GNU/">통계물리2</a>(Schroeder 6–8장): 볼츠만 통계와 깁스 통계, 양자 기체, 이징 모형.</span></p>
     </div>
     <figure class="es-figure">
       <div class="es">
@@ -421,6 +425,7 @@ button.theme-btn svg{width:20px; height:20px; fill:none; stroke:currentColor; st
       <h2 id="part-refs">References <span class="ko" lang="ko">참고문헌</span></h2>
       <ul>
         <li>Daniel V. Schroeder, <i>An Introduction to Thermal Physics</i> (Oxford University Press, 2021; originally Addison Wesley Longman, 2000).</li>
+        <li>The course continues in <a href="https://lshlj82.github.io/statphys2-GNU/">Statistical Physics 2</a>. <span class="ko" lang="ko">이어지는 과목: 통계물리2.</span></li>
         <li>Prof. Sang Hoon Lee, lecture notes for Statistical Physics 1. <span class="ko" lang="ko">이상훈 교수, 통계물리1 강의 노트.</span></li>
       </ul>
     </section>

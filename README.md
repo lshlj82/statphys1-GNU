@@ -8,6 +8,8 @@ Landing page for the interactive web demos that accompany *Statistical Physics 1
 Created by Claude Opus 5.5, based on the lecture notes by Prof. Sang Hoon Lee.
 이상훈 교수의 강의 노트를 바탕으로 Claude Opus 5.5가 만들었습니다.
 
+**Next course · 이어지는 과목:** [Statistical Physics 2](https://github.com/lshlj82/statphys2-GNU) ([live page](https://lshlj82.github.io/statphys2-GNU/)), covering Schroeder Chapters 6–8: Boltzmann and Gibbs statistics, quantum gases, and the Ising model. 통계물리2에서는 Schroeder 6–8장의 볼츠만 통계와 깁스 통계, 양자 기체, 이징 모형을 다룹니다.
+
 ## Demos · 데모 목록
 
 | # | Demo | 데모 | Links |
@@ -48,4 +50,5 @@ Open `index.html` in any modern browser. Fonts load from Google Fonts when onlin
 ## References · 참고문헌
 
 - Daniel V. Schroeder, *An Introduction to Thermal Physics* (Oxford University Press, 2021; originally Addison Wesley Longman, 2000).
+- Continued in [Statistical Physics 2](https://lshlj82.github.io/statphys2-GNU/). (이어지는 과목: 통계물리2)
 - Prof. Sang Hoon Lee, lecture notes for Statistical Physics 1. (이상훈 교수, 통계물리1 강의 노트)

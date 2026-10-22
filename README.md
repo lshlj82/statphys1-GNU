@@ -19,12 +19,16 @@ Created by Claude Opus 5.5, based on the lecture notes by Prof. Sang Hoon Lee.
 | 3 | Rates of Processes | 과정의 빠르기 | [demo](https://lshlj82.github.io/nonequilibrium-basics/) · [source](https://github.com/lshlj82/nonequilibrium-basics) |
 | 4 | Microstates and Macrostates | 미시 상태와 거시 상태 | [demo](https://lshlj82.github.io/statphys-basics/) · [source](https://github.com/lshlj82/statphys-basics) |
 | 5 | Large Systems and Entropy | 큰 계와 엔트로피 | [demo](https://lshlj82.github.io/large-numbers-and-entropy/) · [source](https://github.com/lshlj82/large-numbers-and-entropy) |
+| 5+ | Labels, Arrangements, and the Gibbs Paradox (supplement) | 라벨, 배치, 그리고 깁스 역설 (보충 자료) | [demo](https://lshlj82.github.io/Gibbs-paradox-by-ProfRo/) · [source](https://github.com/lshlj82/Gibbs-paradox-by-ProfRo) |
 | 6 | What Temperature Really Is | 온도란 무엇인가 | [demo](https://lshlj82.github.io/interaction-and-temperature/) · [source](https://github.com/lshlj82/interaction-and-temperature) |
 | 7 | Pressure and Chemical Potential | 압력과 화학 퍼텐셜 | [demo](https://lshlj82.github.io/pressure-and-chemical-potential/) · [source](https://github.com/lshlj82/pressure-and-chemical-potential) |
 | 8 | Heat Engine | 열기관 | [demo](https://lshlj82.github.io/heat-engine/) · [source](https://github.com/lshlj82/heat-engine) |
 | 8+ | Beyond the Carnot Engine (supplement) | 카르노 엔진 너머 (보충 자료) | [demo](https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/) · [한국어](https://lshlj82.github.io/Chambadal-Novikov-Curzon-Ahlborn-engine/ko.html) · [source](https://github.com/lshlj82/Chambadal-Novikov-Curzon-Ahlborn-engine) |
 | 9 | Thermodynamic Potentials | 열역학 퍼텐셜 | [demo](https://lshlj82.github.io/thermodynamic-potentials/) · [source](https://github.com/lshlj82/thermodynamic-potentials) |
 | 10 | Phase Transformation | 상변화 | [demo](https://lshlj82.github.io/phase-transformation/) · [source](https://github.com/lshlj82/phase-transformation) |
+
+Demo 5+ is a supplement to demo 5, based on lecture notes by Prof. Sunghan Ro (Harvard University). It resolves the Gibbs paradox classically by separating labeling entropy from arrangement entropy, and is currently in English only.
+데모 5+는 데모 5의 보충 자료로, 노승한 교수님(하버드 대학교)의 강의 노트를 바탕으로 합니다. 라벨링 엔트로피와 배치 엔트로피를 나누어 양자역학 없이 깁스 역설을 풀며, 현재는 영어로만 제공됩니다.
 
 Demo 8+ is a supplement to demo 8, not a separate lecture topic. It covers the Chambadal–Novikov–Curzon–Ahlborn engine, which delivers finite power, in English and Korean.
 데모 8+는 별도의 강의 주제가 아니라 데모 8의 보충 자료입니다. 유한한 일률을 내는 Chambadal–Novikov–Curzon–Ahlborn 엔진을 영어와 한국어로 다룹니다.
@@ -52,3 +56,4 @@ Open `index.html` in any modern browser. Fonts load from Google Fonts when onlin
 - Daniel V. Schroeder, *An Introduction to Thermal Physics* (Oxford University Press, 2021; originally Addison Wesley Longman, 2000).
 - Continued in [Statistical Physics 2](https://lshlj82.github.io/statphys2-GNU/). (이어지는 과목: 통계물리2)
 - Prof. Sang Hoon Lee, lecture notes for Statistical Physics 1. (이상훈 교수, 통계물리1 강의 노트)
+- Prof. Sunghan Ro (Harvard University), lecture notes on typicality and the Gibbs paradox, for demo 5+. (데모 5+: 노승한 교수님의 강의 노트)

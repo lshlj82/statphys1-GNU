@@ -100,32 +100,6 @@
   .hero-text .sequence { margin-top: 0.9rem; font-family: var(--sans); font-size: 0.95rem; color: var(--muted); max-width: 40rem; }
   .sequence a { font-weight: 600; text-underline-offset: 3px; }
   .sequence span { display: block; margin-top: 0.15rem; }
-    display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-    gap: 2rem;
-  }
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 1.5rem;
-    max-width: 44rem;
-    flex-wrap: wrap;
-    font-family: var(--sans);
-    font-size: 0.9rem;
-  }
-    font: inherit;
-    color: var(--ink);
-    background: transparent;
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-    padding: 0.25rem 0.7rem;
-    cursor: pointer;
-  }
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-top: 0.6rem;
-  }
 
   /* Demo list */
   .part { padding: 2.25rem 0 1rem; border-top: 1px solid var(--rule); }
@@ -169,13 +143,6 @@
   .refs li { margin-bottom: 0.8rem; }
   .refs a { text-underline-offset: 3px; text-decoration-color: var(--rule); }
   .refs a:hover { text-decoration-color: currentColor; }
-    max-width: 46rem;
-    margin: 0.5rem 0 2rem;
-    padding: 1.25rem 1.5rem;
-    border-left: 3px solid var(--accent);
-    background: color-mix(in srgb, var(--accent) 7%, transparent);
-    word-break: keep-all;
-  }
   footer {
     border-top: 1px solid var(--rule);
     padding: 2rem 0 3rem;
@@ -201,6 +168,8 @@
   .c-a { color: var(--solidA-text); } .c-b { color: var(--solidB); } .c-q { color: var(--quanta-text); font-weight: 600; }
   .es-caption { margin: 1.5rem 0 0; font-size: 1rem; line-height: 1.55; max-width: 52rem; }
   .es-caption .ko { display: block; margin-top: 0.4rem; font-size: 0.92rem; }
+  .es-play { font: inherit; font-family: var(--sans); font-size: 0.85rem; color: var(--ink); background: transparent; border: 1px solid var(--rule); border-radius: 3px; padding: 0.25rem 0.7rem; cursor: pointer; margin-top: 1rem; }
+  .es-play:hover { border-color: var(--ink); }
   .es-figure figcaption { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin-top: 0.6rem; }
   .binom { display: inline-flex; align-items: center; vertical-align: middle; }
   .binom .paren { font-size: 2.1em; font-weight: 300; line-height: 1; transform: scaleX(0.7); }
@@ -239,6 +208,7 @@ button.theme-btn svg{width:20px; height:20px; fill:none; stroke:currentColor; st
           <canvas id="hist" class="plot" aria-label="Histogram of q A compared with the multiplicity of the combined system"></canvas>
         </div>
       </div>
+      <button type="button" id="esPlay" class="es-play" aria-controls="solids">Pause</button>
       <p class="es-caption">Two Einstein solids, <span class="c-a">A</span> with <i>N</i><sub>A</sub> = 40 oscillators and <span class="c-b">B</span> with <i>N</i><sub>B</sub> = 60, share <i>q</i> = 100 <span class="c-q">energy quanta</span>. Quanta hop at random so that every microstate is equally likely. Starting with all the energy in A, the system drifts to the macrostate with the largest multiplicity <i>Ω</i><sub>A</sub><i>Ω</i><sub>B</sub> and then fluctuates around it: the histogram (bars, after the first approach to equilibrium) follows <i>Ω</i><sub>A</sub><i>Ω</i><sub>B</sub> (dashed). That most probable division, <i>q</i><sub>A</sub> : <i>q</i><sub>B</sub> = <i>N</i><sub>A</sub> : <i>N</i><sub>B</sub>, is where the two solids have the same temperature.<span class="ko" lang="ko">진동자 <i>N</i><sub>A</sub> = 40개인 아인슈타인 고체 <span class="c-a">A</span>와 <i>N</i><sub>B</sub> = 60개인 고체 <span class="c-b">B</span>가 <span class="c-q">에너지 양자</span> <i>q</i> = 100개를 나눠 가집니다. 양자는 모든 미시 상태가 똑같은 확률로 나타나도록 무작위로 옮겨 다닙니다. 처음에 에너지를 모두 A에 몰아 두어도, 계는 겹침수 <i>Ω</i><sub>A</sub><i>Ω</i><sub>B</sub>가 가장 큰 거시 상태로 옮겨 가고 그 주위에서 요동합니다. 처음 평형에 다가간 뒤부터 쌓은 히스토그램(막대)은 <i>Ω</i><sub>A</sub><i>Ω</i><sub>B</sub>(점선)를 따릅니다. 가장 그럴듯한 나눔 <i>q</i><sub>A</sub> : <i>q</i><sub>B</sub> = <i>N</i><sub>A</sub> : <i>N</i><sub>B</sub>가 바로 두 고체의 온도가 같아지는 곳입니다.</span></p>
       <figcaption>Related to demo 6, <a href="https://lshlj82.github.io/interaction-and-temperature/">What Temperature Really Is</a>. <span lang="ko">관련 데모: 데모 6 「온도란 무엇인가」.</span></figcaption>
     </figure>
@@ -592,18 +562,30 @@ button.theme-btn svg{width:20px; height:20px; fill:none; stroke:currentColor; st
 
   // ---------- run ----------
   readColors(); reset();
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const rmq = window.matchMedia('(prefers-reduced-motion: reduce)'), reduce = rmq.matches;
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { readColors(); draw(); });
 new MutationObserver(() => { readColors(); draw(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   new ResizeObserver(resize).observe(document.querySelector('.es'));
-  if (reduce) { for (let k = 0; k < 30 * 60; k++) advance(1 / 60); draw(); return; }
-  let last = performance.now();
+  if (reduce) { for (let k = 0; k < 30 * 60; k++) advance(1 / 60); draw(); }
+  // run only while playing, on screen and in a visible tab; reduced motion starts (and switches to) paused
+  const btn = document.getElementById('esPlay');
+  let running = !reduce, onScreen = true, raf = 0, last = 0;
+  const want = () => running && onScreen && !document.hidden;
   function frame(now) {
     const dt = Math.min(0.05, (now - last) / 1000); last = now;
     if (dt > 0) { advance(dt); draw(); }
-    requestAnimationFrame(frame);
+    raf = want() ? requestAnimationFrame(frame) : 0;
   }
-  requestAnimationFrame(frame);
+  function sync() {
+    if (want() && !raf) { last = performance.now(); raf = requestAnimationFrame(frame); }
+    else if (!want() && raf) { cancelAnimationFrame(raf); raf = 0; }
+    btn.textContent = running ? 'Pause' : 'Play';
+  }
+  btn.addEventListener('click', () => { running = !running; sync(); });
+  if (rmq.addEventListener) rmq.addEventListener('change', () => { running = !rmq.matches; sync(); });
+  document.addEventListener('visibilitychange', sync);
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => { onScreen = es[0].isIntersecting; sync(); }).observe(document.querySelector('.es-figure'));
+  sync();
 })();
 </script>
 <script>
